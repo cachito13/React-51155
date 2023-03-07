@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Navbar } from '../src/Components/Navbar/Navbar';
+import {Main} from '../src/Components/Main/Main';
+import { Footer } from '../src/Components/Footer/Footer';
+import { Tarjetas } from '../src/Components/Cards/cards';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>React </code> Coderhouse.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Aprende React
-        </a>
-      </header>
-    </div>
+        <div className='container__page'>
+          <Navbar/>
+          <Main greeting={"Adrian Shop"}/>
+         <Tarjetas/>
+          <Footer/>
+       </div>
   );
-}
+} 
 
 export default App;
