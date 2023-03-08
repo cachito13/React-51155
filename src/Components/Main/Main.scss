@@ -1,7 +1,12 @@
 @import '../../assets/variables.scss';
 
 
-
+.linea {
+  height: 4px; 
+  background-color: $secondary-color;
+  
+  
+}
   
  .gretting {
     color: $primary-color;
@@ -14,7 +19,6 @@
     justify-content: center;
  
   }
-
 
  
   .list-container__title {

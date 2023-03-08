@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/Components/Footer/Footer.scss","Footer.css"],"names":[],"mappings":"AAGA;EACI,mEAAA;EACA,qBAAA;EACA,aAAA;EACA,gBAAA;ACFJ;ADGK;EACM,gBAAA;EACA,SAAA;EACA,aAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;ACDX;ADGW;EACC,aAAA;EACA,uBAAA;EACA,mBAAA;ACDZ;ADIU;EACE,iBAAA;EACA,gBAAA;EACA,WAAA;ACFZ;ADKU;EACE,WAAA;ACHZ","file":"Footer.css"}

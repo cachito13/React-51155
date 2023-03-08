@@ -1,0 +1,20 @@
+.linea {
+  height: 4px;
+  background-color: #2b50c7;
+}
+
+.gretting {
+  color: #022549;
+  font-size: 40px24px;
+  font-weight: bold;
+  color: #022549;
+  margin-bottom: 20px;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.list-container__title {
+  color: #022549;
+  margin: 2rem;
+}/*# sourceMappingURL=Main.css.map */

@@ -1,17 +1,18 @@
+@import '../../assets/variables.scss';
 
 .cart-widget {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 5px;
     cursor: pointer;
 
     .cart-icon {
-        color: white;
+        color: $secondary-color;
         font-size: 28px;
     }
 
     span {
-        color: white;
+        color: $dark-color;
         font-size: 20px;
     }
 }

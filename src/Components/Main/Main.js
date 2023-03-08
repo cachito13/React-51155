@@ -9,16 +9,8 @@ export const Main = ( {greeting} ) => {
 
             <h2 className = "gretting">{greeting}</h2>
             <p className="list-container__title">Lista de Productos</p>
-            <hr/>
+            <hr className='linea'/>
 
-            
-
-
-
-          {/* <button className='btn btn-danger'>Click me</button> */}
-
-          {/* <Button variant='dark'>Click me</Button>
-          <Button variant='light' size='sm'>Click me</Button> */}
         </div>
     )
 }

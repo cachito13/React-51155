@@ -1,5 +1,4 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Card, Button } from 'react-bootstrap';
 import img1 from '../../assets/imgs/01.jpg';
 import img2 from '../../assets/imgs/02.jpg';
@@ -16,7 +15,7 @@ export function Tarjetas() {
             <Card.Img variant="top" src={img1} />
             <Card.Body>
             <Card.Title className="text-center">Campera Jet</Card.Title>
-              <Card.Text className="text-center" >Campera para inviero</Card.Text>
+              <Card.Text className="text-center" >Campera inviero</Card.Text>
               <div className="d-flex justify-content-center">
                 <Button variant="primary" className="my-custom-button">$15000</Button>
               </div>

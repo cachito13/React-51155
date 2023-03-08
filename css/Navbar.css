@@ -1,0 +1,30 @@
+.header {
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  border: solid #2b50c7;
+}
+.header .header__container {
+  max-width: 900px;
+  margin: 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__container .header__logo {
+  width: 180px;
+  margin: 0;
+}
+.header .header__container .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.header .header__container .navbar .navbar__link {
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  color: #2b50c7;
+  margin: 0;
+}/*# sourceMappingURL=Navbar.css.map */
