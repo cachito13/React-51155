@@ -9,9 +9,9 @@ export const Navbar = () => {
                 <img src={logo} className="header__logo" alt='logo'/>
             
                   <nav className="navbar">
-                   <p className="navbar__link">Enlace 1</p>
-                   <p className="navbar__link">Enlace 2</p>
-                   <p className="navbar__link">Enlace 3</p>
+                   <p className="navbar__link">Inicio</p>
+                   <p className="navbar__link">Contacto</p>
+                   <p className="navbar__link">Nuestra Empresa</p>
             </nav>
                     <CartWidget/>
             </div>
