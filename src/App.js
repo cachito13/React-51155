@@ -1,8 +1,8 @@
 
 import { Navbar } from '../src/Components/Navbar/Navbar';
-import {Main} from '../src/Components/Main/Main';
+import { ItemListContainer } from '../src/Components/ItemListContainer/ItemListContainer';
 import { Footer } from '../src/Components/Footer/Footer';
-import { Tarjetas } from '../src/Components/Cards/cards';
+// import { Tarjetas } from '../src/Components/Cards/cards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
   return (
         <div className='container__page'>
           <Navbar/>
-          <Main greeting={"Adrian Shop"}/>
-         <Tarjetas/>
+          <ItemListContainer greeting={"Adrian Shop"}/>
+         {/* <Tarjetas/> */}
           <Footer/>
        </div>
   );

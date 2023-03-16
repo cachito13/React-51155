@@ -1,5 +1,4 @@
 
-
 import './Footer.scss'
 export const Footer = () => {
     return(
@@ -10,10 +9,10 @@ export const Footer = () => {
                        <p><small>Todos los derechos @Reservados</small></p>
                  </div>
                
-                 <div class="redes__iconos">
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
-                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                 <div className='redes__iconos'>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i className="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i className="bi bi-twitter"></i></a>
                  </div>
                         
 

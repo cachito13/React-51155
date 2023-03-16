@@ -1,8 +1,6 @@
 
 import { Card, Button } from 'react-bootstrap';
-import img1 from '../../assets/imgs/01.jpg';
-import img2 from '../../assets/imgs/02.jpg';
-import img3 from '../../assets/imgs/03.jpg';
+
 
 import './Cards.scss';
 
