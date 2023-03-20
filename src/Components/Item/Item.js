@@ -8,7 +8,8 @@ export const Item = ( {item} ) => {
                 <img src={item.img} alt="imagen"/>
                 <p>{item.description} </p>
                 <p>Precio: ${item.precio} </p>
-                <button className='btn btn-primary'>Comprar</button>
+                <p><small>Categoria: {item.category} </small></p>
+                <button className='btn btn-primary'>Ver Mas</button>
          </div>
     )
 

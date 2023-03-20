@@ -4,41 +4,53 @@
     "name":"producto 1",
     "description":"lorem3",
     "price": 1500,
-    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff"
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "category": "camperas",
+    "stock":15
 },
 {
     "id":2,
     "name":"producto 2",
     "description":"lorem3",
     "price": 2500,
-    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff"
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "category": "camperas",
+    "stock":15
 },
 {
     "id":3,
     "name":"producto 3",
     "description":"lorem3",
     "price": 3500,
-    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff"
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "category": "remeras",
+    "stock":15
 },
 {
     "id":4,
     "name":"producto 4",
     "description":"lorem3",
     "price": 4500,
-    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff"
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "category": "remeras",
+    "stock":15
 },
 {
     "id":5,
     "name":"producto 5",
     "description":"lorem3",
     "price": 5500,
-    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff"
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "category": "pantalon",
+    "stock":15
 },
 {
     "id":6,
     "name":"producto 6",
     "description":"lorem3",
     "price": 6500,
-    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff"
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "category": "pantalon",
+    "stock":15
 }
 ]

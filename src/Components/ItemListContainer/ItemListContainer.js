@@ -1,11 +1,9 @@
 
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { pedirDatos } from '../../helpers/pedirDatos';
 import  { ItemList } from '../ItemList/ItemList'
 import './ItemListContainer.scss'
-
-
-
 
 
 export const ItemListContainer = () => {
@@ -16,16 +14,27 @@ export const ItemListContainer = () => {
 const [productos, setProductos] = useState([])
 const [loading, setLoading] = useState(true)
  
+// parametros de navegacion
+const { categoryId} = useParams()
+
 
 //(2) y (3) efecto de montaje para que renderizemos el resultado de la promesa una vez que 
 //se halla resuelto y en base a esa respuesta pedimos datos
 useEffect(()=>{
+   setLoading(true)
      // llamamos a la funcion pedir datos que ejecuta una promesa
      // para definir que accion tomar en caso se resuelva o se rechaze la promesa
     pedirDatos()
         .then((res)=>{
-    //res : resuelve como el array MOCK_DATA y se lo envia a la variable: setProducto, que luego actualiza Productos
-            setProductos(res)
+            // filtra  y muestra los productos por categoria de MOCK_DATA
+            if (categoryId) {
+                setProductos( res.filter((prod)=> prod.category === categoryId))
+            } else {
+         //res : resuelve como el array MOCK_DATA y se lo envia a la variable: setProducto, que luego actualiza Productos
+    
+                setProductos(res)
+            }
+           
         })
         .catch((rej)=>{
             console.log(rej)
@@ -33,7 +42,7 @@ useEffect(()=>{
         .finally(() =>{
             setLoading(false)
         })
-    })
+    }, [categoryId])
 //********************************************************************* */
     
 
