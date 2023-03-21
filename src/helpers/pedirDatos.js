@@ -13,6 +13,6 @@ export const pedirDatos = () => {
             // }else{
             //     reject("Promesa rechazada")
             // }                
-        }, 1000);
+        }, 1500);
     })
 }

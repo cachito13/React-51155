@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { pedirDatos } from '../../helpers/pedirDatos';
 import  { ItemList } from '../ItemList/ItemList'
 import './ItemListContainer.scss'
+import ReactLoading from "react-loading";
 
 
 export const ItemListContainer = () => {
@@ -51,7 +52,9 @@ return (
             {
                 
                 loading
-                ? <h2>Cargando....</h2>
+                ? (  <div className="spinner-container">
+                <ReactLoading type={"bars"} color={"#123abc"} height={50} width={50} />
+              </div>)
                 : <ItemList items={productos}/> 
             }
         

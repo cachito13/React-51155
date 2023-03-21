@@ -10,12 +10,20 @@ export const Navbar = () => {
                 <img src={logo} className="header__logo" alt='logo'/>
             
                 <nav className="navbar">
-                   <Link to='/' className="navbar__link">Inicio</Link>
-                   <Link to='/productos/camperas' className="navbar__link">Camperas</Link>
-                    <Link to='/productos/remeras' className="navbar__link">Remeras</Link>
-                    <Link to='/productos/pantalon' className="navbar__link">Pantalones</Link>
-                   <Link to='/contacto' className="navbar__link">Contacto</Link>
-                   <Link to='/nuestra' className="navbar__link">Nuestra Empresa</Link>
+
+                    <div className='navbar_pages'>
+                    <Link to='/' className="navbar__link">Inicio</Link>
+                    <Link to='/contacto' className="navbar__link">Contacto</Link>
+                    <Link to='/nuestra' className="navbar__link">Nuestra Empresa</Link>
+                    </div>
+
+                    <div className='navbar_category'>
+                    <Link to='/productos/camperas' className="navbar__link_categ">Camperas</Link>
+                    <Link to='/productos/remeras' className="navbar__link_categ">Remeras</Link>
+                    <Link to='/productos/pantalon' className="navbar__link_categ">Pantalones</Link>
+                    </div>
+                                     
+                  
                 </nav>
                     <CartWidget/>
             </div>

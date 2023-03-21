@@ -4,12 +4,19 @@
 .footer {
     background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); 
     border: solid $secondary-color;
-    height: 100px;
-    margin-top: auto;
+    height: 60px;
+  
+    // deja fijo el footer
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  
+
      .footer__container {
            max-width: 900px;
            margin: 0;
-           height: 100px;
+           height: 60px;
            display: flex;
            justify-content:space-between ;
            align-items: center;

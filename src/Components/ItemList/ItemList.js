@@ -4,8 +4,9 @@ export const ItemList = ( {items}) =>{
 
     return(
         <div>
-            <p className="list-container__title">Lista de Productos</p>
-            <hr className='linea'/>
+            <h2><strong>Lista de Productos</strong></h2>
+
+            <hr className='linea_sep'/>
             {/* (5) para poder visualizar el nuevo array mockdata que esta en la var Productos del 
             Usestate que ya se actualizo, usamos el metodo map que devuelve un nuevo array, 
             y de la siguiente manera lo organizamos en nuestro DOM  */}

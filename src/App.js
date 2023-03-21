@@ -2,11 +2,12 @@
 import { Navbar } from '../src/Components/Navbar/Navbar';
 import { ItemListContainer } from '../src/Components/ItemListContainer/ItemListContainer';
 import { Footer } from '../src/Components/Footer/Footer';
-// import { Tarjetas } from '../src/Components/Cards/cards';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Contacto from './Components/Contacto/Contacto';
 import NuestraEmpresa from './Components/NuestraEmpresa/NuestraEmpresa';
+import { ItemDetailContainer } from './Components/ItemDetailContainer/ItemDetailContainer';
+
 function App() {
 
   return (
@@ -18,7 +19,7 @@ function App() {
             {/* pagina de inicio */}
               <Route path='/' element={ <ItemListContainer /> } />
               <Route path='/productos/:categoryId' element={ <ItemListContainer /> } />
-
+              <Route path='/detail/:itemId' element={ <ItemDetailContainer /> } />
               <Route path='/contacto' element={ <Contacto/> } />
               <Route path='/nuestra' element={ <NuestraEmpresa/> } />
             

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -14,6 +15,8 @@ code {
 
 .container__page {
   min-height: 100vh;
+ 
   display: flex;
   flex-direction: column;
+  
 }

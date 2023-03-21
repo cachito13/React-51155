@@ -11,7 +11,6 @@
                height: 100px;
                display: flex;
                justify-content:space-between ;
-
                align-items: center;
                
                .header__logo{
@@ -21,18 +20,39 @@
 
         .navbar {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 16px;
 
-            .navbar__link {
-                font-size: 20px;
-                text-transform: uppercase;
-                cursor: pointer;
-                font-weight: 700;
-                color: $secondary-color;
-                margin: 0;
-             }
+            .navbar_pages{
+                display: flex;
+                gap: 3rem;
+                .navbar__link {
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    font-weight: 700;
+                    color: $secondary-color;
+                    margin: 0;
+                }
+
+            }
+            .navbar_category{
+                display: flex;
+                gap: 3rem;
+                .navbar__link_categ{
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    font-weight: 700;
+                    color: $primary-color;
+                    margin: 0;
+                } 
+            }
+
+
+
              }
         }
 }
