@@ -4,7 +4,8 @@ import { pedirDatos } from "../../helpers/pedirDatos"
 import ItemDetail from "../ItemDetail/ItemDetail"
 import './ItemDetailContainer.scss'
 import { Link } from "react-router-dom"
-import ReactLoading from "react-loading";
+import { Loader } from "../Loader/Loader"
+
 
 export const ItemDetailContainer = () => {
     const [item, setItem] = useState(null)
@@ -12,9 +13,7 @@ export const ItemDetailContainer = () => {
 
     const { itemId } = useParams()
 
-    console.log(item)
-    console.log(itemId)
-
+   
     useEffect(() => {
         setLoading(true)
 
@@ -37,9 +36,7 @@ export const ItemDetailContainer = () => {
             <hr/>
             {
                 loading
-                    ? (  <div className="spinner-container">
-                    <ReactLoading type={"bars"} color={"#123abc"} height={50} width={50} />
-                  </div>)
+                    ? <Loader/>
                     : <ItemDetail item={item}/>
             }
         </div>
