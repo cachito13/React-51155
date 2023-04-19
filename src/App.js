@@ -9,6 +9,7 @@ import NuestraEmpresa from './Components/NuestraEmpresa/NuestraEmpresa';
 import { ItemDetailContainer } from './Components/ItemDetailContainer/ItemDetailContainer';
 import { CartProvider } from './Components/context/CartContext';
 import {Cart} from './Components/Cart/Cart';
+import Checkout from './Components/Checkout/Checkout';
 
 
 
@@ -27,11 +28,9 @@ function App() {
                   <Route path='/productos/:categoryId' element={ <ItemListContainer /> } />
                   <Route path='/detail/:itemId' element={ <ItemDetailContainer /> } />
                   <Route path='/cart' element={ <Cart/> } />
-
+                  <Route path='/checkout' element={ <Checkout/> } />
                   <Route path='/contacto' element={ <Contacto/> } />
-
                   <Route path='/nuestra' element={ <NuestraEmpresa/> } />
-
                 {/* "cualquier ruta no definida retorna al inicio */}
                   <Route path='*' element={ <Navigate to ={"/"} />}/>
               </Routes>
